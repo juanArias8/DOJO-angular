@@ -1,0 +1,93 @@
+@import "./../styles/main";
+
+.app-container {
+  margin: 0 !important;
+  padding: 0 !important;
+  height: 100vh !important;
+  width: 100vw !important;
+  overflow: hidden !important;
+
+  .app-header {
+    height: 60px !important;
+    background-color: white !important;
+    border: $square-border;
+    box-shadow: none !important;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    span {
+      @extend %styled-span;
+      margin-left: 100px;
+      font-size: 24px !important;
+      height: 45px !important;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 0 30px 0 30px;
+      margin-right: 200px !important;
+
+      .nav-option {
+        width: 150px !important;
+        height: 40px !important;
+        color: $black-color;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &:active {
+          background-color: transparent !important;
+        }
+
+        &:hover {
+          color: $black-color !important;
+          cursor: pointer !important;
+          border: 1px solid $teal-dark-color;
+          border-radius: 30px !important;
+          background-color: $teal-light-color;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+
+  .app-content {
+    width: 100vw !important;
+    height: calc(100vh - 60px);
+    display: flex;
+    flex-direction: row;
+
+    .form-container {
+      flex: 30%;
+      margin-top: -1px;
+      padding: 20px !important;
+      border: $square-border;
+    }
+
+    .router-container {
+      flex: 70%;
+    }
+  }
+
+  .footer {
+    position: fixed;
+    display: block;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    background-color: white;
+    color: black;
+    margin-left: -1px;
+    flex: 10%;
+    border: $square-border;
+    padding: 0 50px 0 50px !important;
+  }
+}

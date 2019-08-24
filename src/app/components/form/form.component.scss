@@ -1,0 +1,16 @@
+@import "./../../../styles/main";
+
+.number-form {
+  .form-rows {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .btn-send {
+    @extend %btn-green;
+  }
+}
+
+.result-container {
+  margin-top: 20px !important;
+}

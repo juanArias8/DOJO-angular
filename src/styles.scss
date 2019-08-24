@@ -1,1 +1,92 @@
 /* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+@import "~material-design-icons/iconfont/material-icons.css";
+
+@font-face {
+  font-family: "Ubuntu";
+  src: url("assets/fonts/Ubuntu-L.ttf");
+}
+
+:root {
+  --principal-color: #0A351C;
+}
+
+::-webkit-input-placeholder {
+  color: gray !important;
+  opacity: 1;
+  margin-left: 10px !important;
+}
+
+:-moz-placeholder {
+  color: gray !important;
+  opacity: 1;
+  margin-left: 10px !important;
+}
+
+::-moz-placeholder {
+  color: gray !important;
+  opacity: 1;
+  margin-left: 10px !important;
+}
+
+:-ms-input-placeholder {
+  color: gray !important;
+  opacity: 1;
+  margin-left: 10px !important;
+}
+
+::-ms-input-placeholder {
+  color: gray !important;
+  opacity: 1;
+  margin-left: 10px !important;
+}
+
+::placeholder {
+  color: gray !important;
+  opacity: 1;
+  margin-left: 10px !important;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #a5d6a7;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #4caf50;
+}
+
+
+.response-success-container {
+  width: 100%;
+  height: auto;
+  border: 1px solid #4caf50;
+  border-radius: 30px;
+  background-color: #e8f5e9;
+  padding: 10px 15px 10px 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  text-align: center;
+  color: black !important;
+}
+
+.response-fail-container {
+  width: 100%;
+  height: auto;
+  border: 1px solid #f44336;
+  border-radius: 30px;
+  background-color: #ffebee;
+  padding: 10px 15px 10px 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  text-align: center;
+  color: black !important;
+}

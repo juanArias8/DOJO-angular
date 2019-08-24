@@ -1,0 +1,28 @@
+@import "variables";
+
+%btn-base {
+  border-radius: 30px;
+}
+
+%btn-green {
+  @extend %btn-base;
+  background-color: $green-light-color;
+  border: 1px solid $green-dark-color;
+  color: $black-dark-color;
+}
+
+%btn-red {
+  @extend %btn-base;
+  background-color: $red-light-color;
+  border: 1px solid $red-dark-color;
+  color: $black-dark-color;
+}
+
+%styled-span {
+  padding: 5px 15px 5px 15px;
+  border: 1px solid $teal-dark-color;
+  background-color: $teal-light-color;
+  color: $black-color;
+  text-transform: uppercase;
+  border-radius: 30px !important;
+}

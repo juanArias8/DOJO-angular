@@ -1,0 +1,44 @@
+<form #formData="ngForm" (ngSubmit)="convertNewNumber(formData)" class="number-form">
+  <p class="flow-text">Convertir número</p>
+
+  <div class="row form-rows">
+    <div class="input-field col s12">
+      <input #decimalNumber="ngModel" [(ngModel)]="number.decimal" class="validate" type="number" name="decimalNumber"
+             id="decimalNumber" min="1" max="100">
+      <label for="decimalNumber">Número en decimal</label>
+      <span class="helper-text" data-error="Inválido" data-success="Correcto"></span>
+    </div>
+  </div>
+
+  <div *ngIf="convertNumberLoader" class="progress">
+    <div class="indeterminate teal"></div>
+  </div>
+
+  <div *ngIf="convertNumberSuccess !== null"
+       [className]="convertNumberSuccess ? 'response-success-container' : 'response-fail-container'">
+    {{convertNumberMessage}}
+  </div>
+
+  <div class="center-align">
+    <button [disabled]="!formData.valid" class="btn btn-send" name="action" type="submit">
+      Convertir <i class="material-icons right">send</i>
+    </button>
+  </div>
+</form>
+
+<div class="result-container">
+  <table class="centered">
+    <thead>
+    <tr>
+      <th>Decimal</th>
+      <th>Romano</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td>{{number.decimal}}</td>
+      <td>{{number.roman}}</td>
+    </tr>
+    </tbody>
+  </table>
+</div>
